@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200&family=Open+Sans:wght@300&family=Raleway:wght@700&family=Roboto:wght@300&display=swap');
+
+header {
+    background-color: #EAC926;
+}
+
+main {
+    background-color:#ebebeb;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+} 
+
+.lupita {
+    margin-left: 50px;
+}
+
+.segundo-parrafo {
+    margin-left:80px;
+}
+
+ul{
+    list-style-type: none;
+   
+}
+
+li {
+    margin-left: -40px;
+}
+
+footer {
+    color:#666; 
+}
+
+footer div {
+    margin-left: 50px;
+    color: #1259c3;
+    font-size: 50px;
+}
