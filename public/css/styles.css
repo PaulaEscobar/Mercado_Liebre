@@ -16,7 +16,7 @@ header {
 
 .burger-menu {
     background-color: #1259c3;
-    border-radius: 10%; /*borde en las esquinas*/
+    border-radius: 10%;
     display: inline-block;
     margin-left: 45%;
     padding: 6px 9px; 
@@ -59,33 +59,6 @@ footer div {
     font-size: 50px;
 }
 
-
-
-@media(max-width: 720px) {
-    footer { background: var(--color-Gris-claro); 
+.banner-official {
+    margin-top: 10px;
 }
-            img{
-                width: 250px;
-
-            } 
-            .producto1 {
-                background-color: #ffffff; 
-                 border-radius: 8px; 
-                 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /*sombra del cuadrado*/
-            padding: 20px; 
-            margin: 20px; 
-            width: 200px;
-            align-items: center; /*todo lo de producto*/
-            display: flex; /*flexible la caja y mover las cosas que tiene dentro*/
-            flex-direction: column; /*direccion que toman los elementos dento de la caja- producto1*/
-            }
-            .banner-official {
-                width: 100%;
-                margin-top: 10px;
-            }
-            .contenedor-tarjeta {
-                display: flex; 
-                flex-wrap: wrap; 
-                }
-            }
-        
