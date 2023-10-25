@@ -1,27 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200&family=Open+Sans:wght@300&family=Raleway:wght@700&family=Roboto:wght@300&display=swap');
 
-:root¨{
-    --color-Amarillo: #EAC926;
-    --color-Azul: #03264C;
-    --color-Celeste: #1259c3;
-    --color-Gris-oscuro: #6666660e;
-    --color-Gris-claro: #ebebeb;
-    --color-Verde: #39b54a;
-    }
-
 header {
-    background-color: #EAC926; 
+    background-color: #EAC926;
 }
 
-
-.burger-menu {
-    background-color: #1259c3;
-    border-radius: 10%;
-    display: inline-block;
-    margin-left: 45%;
-    padding: 6px 9px; 
-    font-size: 30px;   
-    color:white;
+main {
+    background-color:#ebebeb;
 }
 
 body {
@@ -33,32 +17,76 @@ body {
     margin-left: 50px;
 }
 
+.banner-official {
+    width: 100%;
+}
+
 .segundo-parrafo {
     margin-left:80px;
 }
 
+ul{
+    list-style-type: none;
+   
+}
+
 li {
     margin-left: -40px;
-    list-style: none;
-    text-decoration: none;
-    }
-
- a  {
-     color: black;
-     text-decoration: none;
-    }
+}
 
 footer {
-    text-align: center;
     color:#666; 
+    text-align: center;
 }
 
 footer div {
-    margin-left: 0px;
+    margin-left: 50px;
     color: #1259c3;
     font-size: 50px;
 }
 
-.banner-official {
-    margin-top: 10px;
+a {
+    color: black;
+    text-decoration: none;
 }
+
+.burger-menu {
+    background-color: #1259c3;
+    border-radius: 10%;
+    display: inline-block;
+    margin-left: 45%;
+    padding: 6px 9px; 
+    font-size: 30px;   
+    color:white;
+}
+
+@media(max-width: 720px) {
+    footer {
+        text-align: center;
+        background: var(--color-Gris-claro); 
+}
+            img{
+                width: 200px;
+
+            } 
+            .producto1 {
+                background-color: #ffffff; 
+                border-radius: 8px; 
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);              /*sombra del cuadrado*/
+                padding: 20px; 
+                margin: 20px; 
+                width: 200px;
+                align-items: center;                  /*todo lo de producto*/
+                display: flex;                       /*flexible la caja y mover las cosas que tiene dentro*/
+                flex-direction: column;              /*direccion que toman los elementos dento de la caja- producto1*/
+            }
+            .banner-official {
+                width: 100%;
+                margin-top: 10px;
+            }
+            .contenedor-tarjeta {
+                display: flex; 
+                flex-wrap: wrap;  /*cajas en orden depende el tamaño de VW :) */ 
+                }
+            }
+        
