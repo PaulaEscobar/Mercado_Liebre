@@ -1,38 +1,107 @@
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200&family=Open+Sans:wght@300&family=Raleway:wght@700&family=Roboto:wght@300&display=swap');
 
-header {
-    background-color: #EAC926;
-}
-
-main {
-    background-color:#ebebeb;
-}
-
 body {
     font-family: 'Roboto', sans-serif;
-
+    margin: 0;
+    background-color: #ebebeb;
 } 
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+header {
+    background-color: #EAC926;
+    width: 100%;
+    padding: 16px;
+}
+
+ul, li {
+    list-style-type: none;
+   padding: 0;
+}
+
+.ocultar-versiones {
+    display: none;
+}
+
+.contenedor-tarjeta {
+    display: flex;
+    padding: 16px;
+    gap: 10px;                                  /*espacio entre los productos, cuando uso flexblox*/
+    flex-wrap: wrap;                            /*fila depende el ancho de pantalla  <3 */
+    background-color: #ebebeb;
+}
+
+.producto {
+    margin-bottom: 10px;                                         /*  margen para abajo*/
+    background-color: white;  
+}
+
+.imagen {
+    width: 80%; 
+}
+
+.producto-info {
+    padding: 15px;
+    border-top: 1px solid #ebebeb; 
+}
+
+
+.descuento, .icon-camion { 
+    color: rgb(10, 227, 10);
+    font-weight: bold;
+}
+
+.icon-camion i {
+    border: 1px solid rgb(8, 213, 8);
+    padding: 8px;
+    border-radius: 50%;
+    
+}
+
+
 
 .lupita {
     margin-left: 50px;
 }
 
+.logo {
+ width: 150px;
+ height: 70px;
+}
+
+.principal {
+    background-color: white;
+    flex-direction: row;
+    width: 90%;
+    margin: 0px auto;
+    justify-content: space-around;
+}
+
+.titulo {
+    padding: 0 16px; /* padding para rriba */
+
+}
+
+
 .banner-official {
     width: 100%;
 }
 
+.primer-parrafo {
+    margin-left:20px;
+}
+
 .segundo-parrafo {
-    margin-left:80px;
+    background-color: #ebebeb;
+    margin: 0px;
+    padding: 10px;
 }
 
-ul{
-    list-style-type: none;
-   
-}
 
-li {
-    margin-left: -40px;
-}
 
 footer {
     color:#666; 
@@ -53,40 +122,49 @@ a {
 .burger-menu {
     background-color: #1259c3;
     border-radius: 10%;
-    display: inline-block;
-    margin-left: 45%;
-    padding: 6px 9px; 
+    display: inline-block; /* bloqueo de linEA*/
+    margin-left: 40%;
+    padding: 3px; 
     font-size: 30px;   
     color:white;
+    text-align: center;
 }
 
-@media(max-width: 720px) {
-    footer {
-        text-align: center;
-        background: var(--color-Gris-claro); 
+.descripcion {
+    display: none;
 }
-            img{
-                width: 200px;
 
-            } 
-            .producto1 {
-                background-color: #ffffff; 
-                border-radius: 8px; 
-                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);              /*sombra del cuadrado*/
-                padding: 20px; 
-                margin: 20px; 
-                width: 200px;
-                align-items: center;                  /*todo lo de producto*/
-                display: flex;                       /*flexible la caja y mover las cosas que tiene dentro*/
-                flex-direction: column;              /*direccion que toman los elementos dento de la caja- producto1*/
-            }
-            .banner-official {
-                width: 100%;
-                margin-top: 10px;
-            }
-            .contenedor-tarjeta {
-                display: flex; 
-                flex-wrap: wrap;  /*cajas en orden depende el tamaño de VW :) */ 
-                }
-            }
-        
+
+
+
+@media(min-width: 361px )  {
+/* tablet */
+.descripcion {
+    display: flex;
+}
+    .producto {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+.ocultar-versiones {
+    display: block;
+}
+.burger-menu {
+    display: none;
+}
+}
+
+@media(min-width: 769px) {
+/* escritorio */
+.descripcion {
+    display: flex;
+}
+.producto {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+.ocultar-versiones {
+    display: block;
+}
+.burger-menu{
+    display: none;
+}
+}
