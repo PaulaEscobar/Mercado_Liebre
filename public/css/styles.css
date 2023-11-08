@@ -160,7 +160,7 @@ li {
   font-size: 20px;
 }
 
- footer {
+.footer {
   color: #666;
   text-align: center;
   padding: 16px;
@@ -168,11 +168,20 @@ li {
   flex-direction: column;
   justify-content: center;
   gap: 10px;
+  /* margin-left: 30%; */
 }
 
 footer div {
   color: #1259c3;
   font-size: 2em;
+ 
+}
+.foo1 {
+  margin-left: 40%;
+} 
+
+.alinear-tex-foo {
+  margin-left: auto;
 }
 
 a {
@@ -263,5 +272,8 @@ a {
     .burger-menu {
       display: none;
     }
+  }
+  .foo1 {
+    margin-left: 40%;
   }
 }
