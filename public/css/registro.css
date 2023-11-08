@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200&family=Open+Sans:wght@300&family=Raleway:wght@700&family=Roboto:wght@300&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  background-color: #ebebeb;
+}
+
+img {
+  /* max-width: 100%; */
+  display: block;
+}
+
+header {
+  background-color: #eac926;
+
+  padding: 16px;
+}
+
+ul,
+li {
+  list-style-type: none;
+  padding: 0;
+}
+
+.ocultar-versiones {
+  display: none;
+  margin-top: 20px;
+}
+
+.contenedor-tarjeta {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 16px;
+  gap: 10px; /*espacio entre los productos, cuando uso flexblox*/
+  background-color: #ebebeb;
+  justify-content: center;
+}

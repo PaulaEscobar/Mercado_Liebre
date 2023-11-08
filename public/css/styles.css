@@ -167,21 +167,24 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 10px;
-  /* margin-left: 30%; */
+  gap: 10px; 
+ margin-left: 30%; 
 }
 
-footer div {
+
+.foo1 { /*iconos*/
   color: #1259c3;
   font-size: 2em;
- 
+  display: flex;
+    justify-content: center;
 }
-.foo1 {
-  margin-left: 40%;
-} 
+
 
 .alinear-tex-foo {
-  margin-left: auto;
+  /* display: flex;
+  justify-content: center; */
+  color: #39b54a;
+   margin-left: 0 auto; 
 }
 
 a {
@@ -256,7 +259,7 @@ a {
 }
 
   .icon-camion i {
-    top: 43%;
+    top: 68%;
   }
   .producto {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
@@ -272,8 +275,5 @@ a {
     .burger-menu {
       display: none;
     }
-  }
-  .foo1 {
-    margin-left: 40%;
   }
 }
