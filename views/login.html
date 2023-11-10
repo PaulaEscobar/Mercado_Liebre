@@ -18,6 +18,7 @@
           src="images/logo-mercado-liebre.svg"
           alt="aqui va la imagen"
         /></a>
+      
         <div class="content__search">
           <form class="search__form lupita">
             <div class="form__content">
@@ -65,50 +66,33 @@
       </div>
     </header>
 
-    <main>
-      <section class="section__registro"> 
-        <form class="form__registro" action="" method="POST">
-          <input class="input__form__registro" type="text" name="nombre-apellido" placeholder="Nombre y Apellido">
+    <main class="login-main">
+      
+      <section class="section-form">
+        <form action="" method="POST">
+          <input
+            type="text"
+            name="Usuario"
+            placeholder="Nombre de usuario"
+            required
+          />
+          <input
+            type="password"
+            name="password"
+            placeholder="Contraseña"
+            required
+          />
 
-          <input class="input__form__registro" type="text" name="nombre-usuario" placeholder="Nombre de Usuario">
-
-          <input class="input__form__registro" type="email" name="e-mail" placeholder="E-mail">
-          
-          <label class="label__form__registro" for="fecha-nacimiento">Fecha de Nacimiento:</label>
-          <input class="input__form__registro" type="date" name="fecha-nacimiento" id="fecha-nacimiento" placeholder="MM/DD/YYYY" min="1930-01-01" max="2005-12-31">
-
-          <input class="input__form__registro" type="text" name="domicilio" placeholder="Domicilio">
-
-          <label class="label__form__registro">Perfil de usuario</label>
-          <div class="div__radio__form__registro">
-          <p><input class="input__form__registro" type="radio" name="Comprador" value="Comprador">  Comprador</p>
-          <p><input class="input__form__registro" type="radio" name="Vendedor" value="Vendedor">  Vendedor</p>
-          </div>
-
-          <label class="label__form__registro">Intereses</label>
-          <p><input class="input__form__registro" type="checkbox" name="electro"> Electro</p>
-          <p><input class="input__form__registro" type="checkbox" name="moda"> Moda</p>
-          <p><input class="input__form__registro" type="checkbox" name="hogar"> Jugueteria</p>
-          <p><input class="input__form__registro" type="checkbox" name="jugueteria"> Vida Sana</p>
-          
-          <label class="label__form__registro__foto-usuario">Foto de Usuario</label>
-          <input class="input__form__registro__foto-usuario" type="file" name="imagen-perfil" accept=".jpg .png">
-
-          <input class="input__form__registro" type="password" placeholder="Contraseña" name="password" required>
-          <input class="input__form__registro" type="password" placeholder="Confirmar Contraseña" name="Confirmar contraseña" required>
-
-            <div class="div__button__form__registro">
-          <button class="button-borrar__form__registro" type="reset">Borrar</button>
-          <button class="button__form__registro" type="submit" href="/views/home.html">Enviar</button>
-            </div>
-          
+          <button class="button__form__login"  type="submit" formaction="/">Enviar</button>
+        
         </form>
       </section>
+    
     </main>
 
     <footer>
       <section class="section-footer">
-        <i class="foo1 fa-solid fa-credit-card"> </i> 
+        <i class="foo1 fa-solid fa-credit-card"> </i>
 
         <h3>Pagá con tarjeta o en efectivo</h3>
 
@@ -117,14 +101,14 @@
           efectivo en puntos de pago. ¡Y siempre es seguro!
         </p>
 
-        <i class="foo1 fa-solid fa-gift"> </i> 
+        <i class="foo1 fa-solid fa-gift"> </i>
         <h3>Envío gratis desde $ 2.500</h3>
 
         <p>
           Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en
           miles de productos. Es un beneficio de Mercado Puntos.
         </p>
-        <i class=" foo1  fa-solid fa-user-shield"></i>
+        <i class="foo1 fa-solid fa-user-shield"></i>
         <h3>Seguridad, de principio a fin</h3>
 
         <p>
@@ -136,4 +120,3 @@
     </footer>
   </body>
 </html>
-
