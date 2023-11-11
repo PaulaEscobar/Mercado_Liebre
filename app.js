@@ -3,7 +3,7 @@ const app = express();
 const path = require("path");
 
 app.listen(3030, (req, res) => 
-    console.log("puerto corriendo exitoso"))
+    console.log("puerto 3030 corriendo exitoso"))
 
 
 
