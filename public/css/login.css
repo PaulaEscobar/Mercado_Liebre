@@ -79,9 +79,15 @@ li {
     color: white;
   }
 
+  .button__form__login:hover {
+    
+    background-color: #0022AA;
+
+  }
 
 
-.section-footer {
+
+/* .section-footer {
     text-align: center;
     padding: 16px;
     display: flex;
@@ -90,14 +96,14 @@ li {
     gap: 10px; 
     background-color: white;
   
-  }
+  } */
   
   
-  .foo1 { /*iconos*/
+  /* .foo1 { 
     color: #1259c3;
     font-size: 2em;
     display: flex;
       justify-content: center;
-  }
+  } */
   
   
