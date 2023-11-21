@@ -321,12 +321,8 @@ a {
   
 }
 
-/* .div__footer__enlinea {
-  display: flex;
-} */
-
 .section-footer h3  {
-display: flex;
+align-items: center;
 }
 
 .Copyright {
